@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://academy.semantix.ai/courses/120/files/folder/elastic/pipeline
+HostUrl=https://canvas-semantix-bucket.s3.us-east-2.amazonaws.com/account_1/attachments/208/logstash.conf?response-content-disposition=attachment%3B%20filename%3D%22logstash.conf%22%3B%20filename%2A%3DUTF-8%27%27logstash.conf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATQHQD47CDTFU4ZWS%2F20220322%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20220322T214959Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=40691e3ad954e49d4be42c8cc929cb52e88e186af0bd0cd39f49e6b351918846
