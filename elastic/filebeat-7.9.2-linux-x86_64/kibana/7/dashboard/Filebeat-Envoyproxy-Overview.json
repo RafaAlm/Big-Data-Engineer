@@ -1,0 +1,244 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Filebeat Envoyproxy Overview Dashboard",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"embeddableConfig\": {}, \"panelRefName\": \"panel_0\", \"gridData\": {\"w\": 22, \"h\": 7, \"i\": \"1\", \"x\": 22, \"y\": 0}, \"panelIndex\": \"1\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"gridData\": {\"w\": 22, \"h\": 10, \"i\": \"2\", \"x\": 22, \"y\": 7}, \"panelIndex\": \"2\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"gridData\": {\"w\": 22, \"h\": 10, \"i\": \"3\", \"x\": 0, \"y\": 7}, \"panelIndex\": \"3\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"gridData\": {\"w\": 22, \"h\": 7, \"i\": \"4\", \"x\": 0, \"y\": 0}, \"panelIndex\": \"4\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"gridData\": {\"w\": 22, \"h\": 10, \"i\": \"5\", \"x\": 0, \"y\": 17}, \"panelIndex\": \"5\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"gridData\": {\"w\": 22, \"h\": 10, \"i\": \"6\", \"x\": 22, \"y\": 17}, \"panelIndex\": \"6\", \"version\": \"8.0.0-SNAPSHOT\"}]",
+                "timeRestore": false,
+                "title": "[Filebeat Envoyproxy] Overview",
+                "version": 1
+            },
+            "id": "0c610510-5cbd-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "dashboard": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "36f872a0-5c03-11e9-85b4-19d0072eb4f2",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "80844540-5c97-11e9-8477-077ec9664dbd",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "38f96190-5c99-11e9-8477-077ec9664dbd",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7e4084e0-5c99-11e9-8477-077ec9664dbd",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0a994af0-5c9d-11e9-8477-077ec9664dbd",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "ab48c3f0-5ca6-11e9-8477-077ec9664dbd",
+                    "name": "panel_5",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-04-12T01:00:18.033Z",
+            "version": "WzExNjU4LDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Top HTTP Response Codes [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top HTTP Response Codes [Filebeat Envoyproxy]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"http.response.status_code\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"tagcloud\", \"params\": {\"bucket\": {\"accessor\": 0, \"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"number\"}, \"id\": \"terms\"}, \"params\": {}}, \"minFontSize\": 18, \"scale\": \"linear\", \"showLabel\": false, \"orientation\": \"single\", \"maxFontSize\": 72, \"metric\": {\"accessor\": 1, \"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}}}}"
+            },
+            "id": "36f872a0-5c03-11e9-85b4-19d0072eb4f2",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-12T00:58:13.110Z",
+            "version": "WzExNjUzLDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Top Domains [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Domains [Filebeat Envoyproxy]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"url.domain\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"isDonut\": true, \"dimensions\": {\"metric\": {\"accessor\": 0, \"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}}}, \"legendPosition\": \"right\", \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"type\": \"pie\", \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "80844540-5c97-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-12T00:58:53.299Z",
+            "version": "WzExNjU1LDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Requests per Source [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Requests per Source [Filebeat Envoyproxy]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"source.address\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"histogram\", \"params\": {\"times\": [], \"categoryAxes\": [{\"show\": true, \"type\": \"category\", \"id\": \"CategoryAxis-1\", \"title\": {}, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"show\": true, \"truncate\": 100}, \"style\": {}, \"position\": \"bottom\"}], \"legendPosition\": \"right\", \"dimensions\": {\"x\": null, \"y\": [{\"accessor\": 0, \"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}}]}, \"grid\": {\"categoryLines\": false}, \"type\": \"histogram\", \"addLegend\": true, \"seriesParams\": [{\"show\": \"true\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"showCircles\": true, \"drawLinesBetweenPoints\": true, \"type\": \"histogram\", \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"addTimeMarker\": false, \"valueAxes\": [{\"show\": true, \"style\": {}, \"type\": \"value\", \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"show\": true, \"rotate\": 0, \"filter\": false, \"truncate\": 100}, \"id\": \"ValueAxis-1\", \"position\": \"left\"}], \"addTooltip\": true}}"
+            },
+            "id": "38f96190-5c99-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-12T00:58:36.398Z",
+            "version": "WzExNjU0LDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Unique Domains [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Unique Domains [Filebeat Envoyproxy]\", \"aggs\": [{\"type\": \"cardinality\", \"enabled\": true, \"params\": {\"field\": \"url.domain\"}, \"schema\": \"metric\", \"id\": \"1\"}], \"type\": \"metric\", \"params\": {\"type\": \"metric\", \"metric\": {\"bucket\": {\"accessor\": 0, \"aggType\": \"terms\", \"format\": {\"params\": {\"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"id\": \"string\"}, \"id\": \"terms\"}, \"params\": {}}, \"invertColors\": false, \"useRanges\": false, \"style\": {\"fontSize\": 60, \"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": false}, \"metrics\": [{\"accessor\": 0, \"aggType\": \"cardinality\", \"format\": {\"id\": \"number\"}, \"params\": {}}], \"percentageMode\": false, \"metricColorMode\": \"None\"}, \"addTooltip\": true, \"addLegend\": false}}"
+            },
+            "id": "7e4084e0-5c99-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-12T00:57:42.389Z",
+            "version": "WzExNjUyLDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"lucene\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Top User Agents [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top User Agents [Filebeat Envoyproxy]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"user_agent.name\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"isDonut\": true, \"dimensions\": {\"metric\": {\"accessor\": 0, \"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}}}, \"legendPosition\": \"right\", \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"type\": \"pie\", \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "0a994af0-5c9d-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-12T00:59:11.691Z",
+            "version": "WzExNjU2LDld"
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.dataset:envoyproxy.log\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.dataset\": {\"type\": \"phrase\", \"query\": \"envoyproxy.log\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"envoyproxy.log\"}, \"negate\": false, \"value\": \"envoyproxy.log\", \"key\": \"event.dataset\", \"disabled\": false}}], \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "title": "Proxy Request Distribution [Filebeat Envoyproxy]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Proxy Request Distribution [Filebeat Envoyproxy] \", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"envoyproxy.proxy_type\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"isDonut\": true, \"dimensions\": {\"metric\": {\"accessor\": 0, \"aggType\": \"count\", \"format\": {\"id\": \"number\"}, \"params\": {}}}, \"legendPosition\": \"right\", \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"type\": \"pie\", \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "ab48c3f0-5ca6-11e9-8477-077ec9664dbd",
+            "migrationVersion": {
+                "visualization": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-04-11T22:10:51.951Z",
+            "version": "WzExNjQ5LDld"
+        }
+    ],
+    "version": "8.0.0-SNAPSHOT"
+}

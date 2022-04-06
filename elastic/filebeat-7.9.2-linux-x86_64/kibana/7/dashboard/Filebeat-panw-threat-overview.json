@@ -1,0 +1,262 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Palo Alto Networks PAN-OS Threats Overview",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"embeddableConfig\": {\"vis\": {\"legendOpen\": false}}, \"panelRefName\": \"panel_0\", \"version\": \"7.1.0\", \"title\": \"Threat outcome histogram\", \"gridData\": {\"w\": 31, \"h\": 15, \"i\": \"1\", \"x\": 0, \"y\": 0}, \"panelIndex\": \"1\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_1\", \"version\": \"7.1.0\", \"title\": \"Top threats by name\", \"gridData\": {\"w\": 24, \"h\": 15, \"i\": \"2\", \"x\": 0, \"y\": 15}, \"panelIndex\": \"2\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"version\": \"7.1.0\", \"title\": \"Top threats by resource\", \"gridData\": {\"w\": 24, \"h\": 15, \"i\": \"3\", \"x\": 24, \"y\": 15}, \"panelIndex\": \"3\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"version\": \"7.1.0\", \"title\": \"Top attackers (clients)\", \"gridData\": {\"w\": 24, \"h\": 8, \"i\": \"4\", \"x\": 0, \"y\": 30}, \"panelIndex\": \"4\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"version\": \"7.1.0\", \"title\": \"Top attackers (servers)\", \"gridData\": {\"w\": 24, \"h\": 8, \"i\": \"5\", \"x\": 24, \"y\": 30}, \"panelIndex\": \"5\"}, {\"embeddableConfig\": {\"vis\": {\"legendOpen\": true}}, \"panelRefName\": \"panel_5\", \"version\": \"7.1.0\", \"title\": \"Outcome by threat type\", \"gridData\": {\"w\": 17, \"h\": 15, \"i\": \"6\", \"x\": 31, \"y\": 0}, \"panelIndex\": \"6\"}]",
+                "timeRestore": false,
+                "title": "[Filebeat PANW] Threats Overview ECS",
+                "version": 1
+            },
+            "id": "772964e0-7591-11e9-aacf-79a3704914a0",
+            "migrationVersion": {
+                "dashboard": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "0bd2a0c0-7574-11e9-976e-65a8f47cc4c1",
+                    "name": "panel_0",
+                    "type": "visualization"
+                },
+                {
+                    "id": "3eca1070-7589-11e9-aacf-79a3704914a0",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "5bd32b20-7575-11e9-976e-65a8f47cc4c1",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "90ce3300-758a-11e9-aacf-79a3704914a0",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "a95aaf20-758a-11e9-aacf-79a3704914a0",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "6dce7930-758c-11e9-aacf-79a3704914a0",
+                    "name": "panel_5",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2019-05-13T15:12:04.141Z",
+            "version": "WzI1NiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Threat outcome histogram [Filebeat PANW] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Threat outcome histogram [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"date_histogram\", \"enabled\": true, \"params\": {\"timeRange\": {\"from\": \"2018-04-10T04:36:19.586Z\", \"to\": \"2018-04-10T04:39:56.264Z\"}, \"drop_partials\": false, \"interval\": \"auto\", \"min_doc_count\": 1, \"customInterval\": \"2h\", \"useNormalizedEsInterval\": true, \"field\": \"@timestamp\", \"extended_bounds\": {}}, \"schema\": \"segment\", \"id\": \"2\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.outcome\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"group\", \"id\": \"3\"}], \"type\": \"histogram\", \"params\": {\"categoryAxes\": [{\"show\": true, \"type\": \"category\", \"id\": \"CategoryAxis-1\", \"title\": {}, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"show\": true, \"truncate\": 100}, \"style\": {}, \"position\": \"bottom\"}], \"legendPosition\": \"right\", \"times\": [], \"grid\": {\"categoryLines\": false}, \"type\": \"histogram\", \"addLegend\": true, \"seriesParams\": [{\"show\": \"true\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"showCircles\": true, \"drawLinesBetweenPoints\": true, \"type\": \"histogram\", \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"addTimeMarker\": false, \"valueAxes\": [{\"show\": true, \"style\": {}, \"type\": \"value\", \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"show\": true, \"rotate\": 0, \"filter\": false, \"truncate\": 100}, \"id\": \"ValueAxis-1\", \"position\": \"left\"}], \"addTooltip\": true}}"
+            },
+            "id": "0bd2a0c0-7574-11e9-976e-65a8f47cc4c1",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T11:41:28.652Z",
+            "version": "WzI0NiwxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Threat ID Cloud [Filebeat PANW] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Threat ID Cloud [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"panw.panos.threat.name\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"tagcloud\", \"params\": {\"scale\": \"linear\", \"showLabel\": true, \"orientation\": \"single\", \"maxFontSize\": 72, \"minFontSize\": 18}}"
+            },
+            "id": "3eca1070-7589-11e9-aacf-79a3704914a0",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T15:06:36.839Z",
+            "version": "WzI1NSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Threat Resource Cloud [Filebeat PANW] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Threat Resource Cloud [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"url.original\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"tagcloud\", \"params\": {\"scale\": \"linear\", \"showLabel\": true, \"orientation\": \"single\", \"maxFontSize\": 72, \"minFontSize\": 18}}"
+            },
+            "id": "5bd32b20-7575-11e9-976e-65a8f47cc4c1",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T11:50:52.370Z",
+            "version": "WzI0NywxXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"network.direction\": {\"type\": \"phrase\", \"query\": \"inbound\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"inbound\"}, \"negate\": false, \"value\": \"inbound\", \"key\": \"network.direction\", \"disabled\": false}}]}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Top attackers (clients) [Filebeat PANW] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"title\": \"Top attackers (clients) [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"client.ip\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"bucket\", \"id\": \"2\"}], \"type\": \"table\", \"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"totalFunc\": \"sum\", \"showPartialRows\": false, \"showTotal\": false, \"perPage\": 10}}"
+            },
+            "id": "90ce3300-758a-11e9-aacf-79a3704914a0",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T14:22:40.688Z",
+            "version": "WzI1MSwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"network.direction\": {\"type\": \"phrase\", \"query\": \"outbound\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"outbound\"}, \"negate\": false, \"value\": \"outbound\", \"key\": \"network.direction\", \"disabled\": false}}]}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Top attackers (servers) [Filebeat PANW] ECS",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"title\": \"Top attackers (servers) [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"server.ip\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"bucket\", \"id\": \"2\"}], \"type\": \"table\", \"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}, \"showMetricsAtAllLevels\": false, \"totalFunc\": \"sum\", \"showPartialRows\": false, \"showTotal\": false, \"perPage\": 10}}"
+            },
+            "id": "a95aaf20-758a-11e9-aacf-79a3704914a0",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T14:23:21.874Z",
+            "version": "WzI1MiwyXQ=="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "Outcome by Threat Type [Filebeat PANW] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Outcome by Threat Type [Filebeat PANW] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.action\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"3\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.outcome\", \"missingBucket\": true, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "6dce7930-758c-11e9-aacf-79a3704914a0",
+            "migrationVersion": {
+                "visualization": "7.0.1"
+            },
+            "references": [
+                {
+                    "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2019-05-13T14:36:00.962Z",
+            "version": "WzI1MywyXQ=="
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "_source"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"event.dataset: \\\"panw.panos\\\" and event.category: \\\"security_threat\\\"\"}, \"highlightAll\": true, \"filter\": [], \"version\": true, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "PAN-OS Threats [Filebeat PANW] ECS",
+                "version": 1
+            },
+            "id": "3cea1360-7569-11e9-976e-65a8f47cc4c1",
+            "migrationVersion": {
+                "search": "7.0.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "search",
+            "updated_at": "2019-05-13T10:24:06.550Z",
+            "version": "WzIzNiwxXQ=="
+        }
+    ],
+    "version": "7.1.0"
+}

@@ -1,0 +1,201 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Activity Types over Time [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Activity Types over Time [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"date_histogram\", \"enabled\": true, \"params\": {\"customInterval\": \"2h\", \"extended_bounds\": {}, \"interval\": \"auto\", \"field\": \"@timestamp\", \"min_doc_count\": 1}, \"schema\": \"segment\", \"id\": \"2\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 20, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"suricata.eve.event_type\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"group\", \"id\": \"3\"}], \"type\": \"histogram\", \"params\": {\"categoryAxes\": [{\"show\": true, \"type\": \"category\", \"id\": \"CategoryAxis-1\", \"title\": {}, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"show\": true, \"truncate\": 100}, \"style\": {}, \"position\": \"bottom\"}], \"legendPosition\": \"right\", \"times\": [], \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"type\": \"histogram\", \"addLegend\": true, \"seriesParams\": [{\"show\": \"true\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"showCircles\": true, \"drawLinesBetweenPoints\": true, \"type\": \"histogram\", \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"addTimeMarker\": false, \"valueAxes\": [{\"show\": true, \"style\": {}, \"type\": \"value\", \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"show\": true, \"rotate\": 0, \"filter\": false, \"truncate\": 100}, \"id\": \"ValueAxis-1\", \"position\": \"left\"}], \"addTooltip\": true}}"
+            },
+            "id": "c7d46c60-86da-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Event Types [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Event Types [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 20, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"suricata.eve.event_type\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"bottom\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "0a0aa630-86db-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Top Application Protocols [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Application Protocols [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 10, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"network.protocol\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"bottom\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "728f64c0-86db-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Top Hosts Generating Events [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Hosts Generating Events [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"date_histogram\", \"enabled\": true, \"params\": {\"customInterval\": \"2h\", \"extended_bounds\": {}, \"interval\": \"auto\", \"field\": \"@timestamp\", \"min_doc_count\": 1}, \"schema\": \"segment\", \"id\": \"2\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 10, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"host.name\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"group\", \"id\": \"3\"}], \"type\": \"histogram\", \"params\": {\"categoryAxes\": [{\"show\": true, \"type\": \"category\", \"id\": \"CategoryAxis-1\", \"title\": {}, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"show\": true, \"truncate\": 100}, \"style\": {}, \"position\": \"bottom\"}], \"legendPosition\": \"right\", \"times\": [], \"grid\": {\"categoryLines\": false, \"style\": {\"color\": \"#eee\"}}, \"type\": \"histogram\", \"addLegend\": true, \"seriesParams\": [{\"show\": \"true\", \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"showCircles\": true, \"drawLinesBetweenPoints\": true, \"type\": \"histogram\", \"mode\": \"stacked\", \"valueAxis\": \"ValueAxis-1\"}], \"addTimeMarker\": false, \"valueAxes\": [{\"show\": true, \"style\": {}, \"type\": \"value\", \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"show\": true, \"rotate\": 0, \"filter\": false, \"truncate\": 100}, \"id\": \"ValueAxis-1\", \"position\": \"left\"}], \"addTooltip\": true}}"
+            },
+            "id": "9d5b5b50-86db-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "host.name",
+                    "suricata.eve.event_type",
+                    "suricata.eve.flow_id",
+                    "network.transport",
+                    "source.ip",
+                    "source.port",
+                    "destination.ip",
+                    "destination.port",
+                    "destination.geo.region_name",
+                    "destination.geo.country_iso_code"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"suricata.eve.event_type\": {\"type\": \"phrase\", \"query\": \"stats\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"stats\", \"params\": {\"type\": \"phrase\", \"query\": \"stats\"}, \"negate\": true, \"index\": \"filebeat-*\", \"key\": \"suricata.eve.event_type\", \"disabled\": false}}, {\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.module\": {\"type\": \"phrase\", \"query\": \"suricata\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"suricata\", \"params\": {\"type\": \"phrase\", \"query\": \"suricata\"}, \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"event.module\", \"disabled\": false}}], \"version\": true, \"index\": \"filebeat-*\"}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "Events [Filebeat Suricata] ECS",
+                "version": 1
+            },
+            "id": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+            "type": "search",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Top Connection Source Countries [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Connection Source Countries [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 10, \"missingBucketLabel\": \"Missing\", \"customLabel\": \"Top Connection Source Countries\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"source.geo.country_iso_code\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"tagcloud\", \"params\": {\"scale\": \"linear\", \"showLabel\": true, \"orientation\": \"single\", \"maxFontSize\": 72, \"minFontSize\": 18}}"
+            },
+            "id": "5f99eb50-86dc-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Top Connection Destination Countries [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Connection Destination Countries [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 10, \"missingBucketLabel\": \"Missing\", \"customLabel\": \"Top Connection Destination Countries\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"destination.geo.country_iso_code\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"tagcloud\", \"params\": {\"scale\": \"linear\", \"showLabel\": true, \"orientation\": \"single\", \"maxFontSize\": 72, \"minFontSize\": 18}}"
+            },
+            "id": "8e7f88d0-86dc-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs",
+                "title": "Top Network Protocols [Filebeat Suricata] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Top Network Protocols [Filebeat Suricata] ECS\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 10, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"network.transport\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"bottom\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "0a363820-86dd-11e8-b59d-21efb914e65c-ecs",
+            "type": "visualization",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "host.name",
+                    "suricata.eve.stats.detect.alert",
+                    "suricata.eve.stats.app_layer.flow.dns_udp",
+                    "suricata.eve.stats.app_layer.flow.tls",
+                    "suricata.eve.stats.app_layer.flow.http",
+                    "suricata.eve.stats.app_layer.flow.ssh",
+                    "suricata.eve.stats.tcp.sessions"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"suricata.eve.event_type\": {\"type\": \"phrase\", \"query\": \"stats\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"stats\", \"params\": {\"type\": \"phrase\", \"query\": \"stats\"}, \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"suricata.eve.event_type\", \"disabled\": false}}, {\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.module\": {\"type\": \"phrase\", \"query\": \"suricata\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"suricata\", \"params\": {\"type\": \"phrase\", \"query\": \"suricata\"}, \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"event.module\", \"disabled\": false}}], \"version\": true, \"index\": \"filebeat-*\"}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "Host Stats [Filebeat Suricata] ECS",
+                "version": 1
+            },
+            "id": "d57a2db0-86ca-11e8-b59d-21efb914e65c-ecs",
+            "type": "search",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "Overview of the Surcata events dashboard.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [], \"version\": true}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"c7d46c60-86da-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 48, \"h\": 10, \"i\": \"1\", \"x\": 0, \"y\": 0}, \"panelIndex\": \"1\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"0a0aa630-86db-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 9, \"h\": 14, \"i\": \"2\", \"x\": 0, \"y\": 20}, \"panelIndex\": \"2\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"728f64c0-86db-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 11, \"h\": 14, \"i\": \"3\", \"x\": 19, \"y\": 20}, \"panelIndex\": \"3\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"9d5b5b50-86db-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 48, \"h\": 10, \"i\": \"4\", \"x\": 0, \"y\": 10}, \"panelIndex\": \"4\"}, {\"embeddableConfig\": {}, \"type\": \"search\", \"version\": \"6.3.0\", \"id\": \"13dd22f0-86cc-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 48, \"h\": 19, \"i\": \"5\", \"x\": 0, \"y\": 34}, \"panelIndex\": \"5\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"5f99eb50-86dc-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 9, \"h\": 14, \"i\": \"6\", \"x\": 30, \"y\": 20}, \"panelIndex\": \"6\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"8e7f88d0-86dc-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 9, \"h\": 14, \"i\": \"7\", \"x\": 39, \"y\": 20}, \"panelIndex\": \"7\"}, {\"embeddableConfig\": {}, \"type\": \"visualization\", \"version\": \"6.3.0\", \"id\": \"0a363820-86dd-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 10, \"h\": 14, \"i\": \"8\", \"x\": 9, \"y\": 20}, \"panelIndex\": \"8\"}, {\"embeddableConfig\": {}, \"type\": \"search\", \"version\": \"6.3.0\", \"id\": \"d57a2db0-86ca-11e8-b59d-21efb914e65c-ecs\", \"gridData\": {\"w\": 48, \"h\": 16, \"i\": \"9\", \"x\": 0, \"y\": 53}, \"panelIndex\": \"9\"}]",
+                "timeRestore": false,
+                "title": "[Filebeat Suricata] Events Overview ECS",
+                "version": 1
+            },
+            "id": "78289c40-86da-11e8-b59d-21efb914e65c-ecs",
+            "type": "dashboard",
+            "updated_at": "2018-11-07T22:56:24.962Z",
+            "version": 1
+        }
+    ],
+    "version": "6.4.3"
+}

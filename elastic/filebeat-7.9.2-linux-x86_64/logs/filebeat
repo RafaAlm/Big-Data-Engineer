@@ -1,0 +1,4 @@
+2022-03-29T19:18:37.324-0300	INFO	instance/beat.go:640	Home path: [/home/rafael/docker-bigdata/elastic/filebeat-7.9.2-linux-x86_64] Config path: [/home/rafael/docker-bigdata/elastic/filebeat-7.9.2-linux-x86_64] Data path: [/home/rafael/docker-bigdata/elastic/filebeat-7.9.2-linux-x86_64/data] Logs path: [/home/rafael/docker-bigdata/elastic/filebeat-7.9.2-linux-x86_64/logs]
+2022-03-29T19:18:37.325-0300	INFO	instance/beat.go:648	Beat ID: 2f81797a-3828-490b-a283-a333168b0f74
+2022-03-29T19:18:37.371-0300	INFO	[index-management]	idxmgmt/std.go:184	Set output.elasticsearch.index to 'filebeat-7.9.2' as ILM is enabled.
+2022-03-29T19:18:37.371-0300	INFO	eslegclient/connection.go:99	elasticsearch url: http://localhost:9200

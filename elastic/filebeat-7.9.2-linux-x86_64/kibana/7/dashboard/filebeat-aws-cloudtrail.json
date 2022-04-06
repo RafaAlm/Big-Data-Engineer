@@ -1,0 +1,317 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "Summary of events from AWS CloudTrail.",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"embeddableConfig\": {\"isLayerTOCOpen\": false, \"openTOCDetails\": [], \"mapCenter\": {\"lon\": -12.20429, \"lat\": 17.90562, \"zoom\": 0.97}, \"hiddenLayers\": []}, \"panelRefName\": \"panel_0\", \"gridData\": {\"w\": 24, \"h\": 15, \"i\": \"85d26d9a-2a71-4b98-a026-5f513094d6e5\", \"x\": 0, \"y\": 0}, \"panelIndex\": \"85d26d9a-2a71-4b98-a026-5f513094d6e5\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {\"colors\": {\"failure\": \"#E24D42\"}, \"vis\": {\"colors\": {\"failure\": \"#E24D42\", \"success\": \"#629E51\"}}}, \"panelRefName\": \"panel_1\", \"gridData\": {\"w\": 24, \"h\": 15, \"i\": \"6b3eff90-3071-451e-a827-ca569e0ac10b\", \"x\": 24, \"y\": 0}, \"panelIndex\": \"6b3eff90-3071-451e-a827-ca569e0ac10b\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_2\", \"gridData\": {\"w\": 12, \"h\": 13, \"i\": \"952e456a-e9ae-4606-b838-e16019375336\", \"x\": 0, \"y\": 15}, \"panelIndex\": \"952e456a-e9ae-4606-b838-e16019375336\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_3\", \"gridData\": {\"w\": 12, \"h\": 13, \"i\": \"802ad09d-5883-4e41-99ac-6c356144d24d\", \"x\": 12, \"y\": 15}, \"panelIndex\": \"802ad09d-5883-4e41-99ac-6c356144d24d\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_4\", \"gridData\": {\"w\": 12, \"h\": 13, \"i\": \"3e617d87-3acf-4203-b03b-c907c9145fce\", \"x\": 24, \"y\": 15}, \"panelIndex\": \"3e617d87-3acf-4203-b03b-c907c9145fce\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_5\", \"gridData\": {\"w\": 12, \"h\": 13, \"i\": \"d6f03440-c717-4f5e-928c-72ae9d450318\", \"x\": 36, \"y\": 15}, \"panelIndex\": \"d6f03440-c717-4f5e-928c-72ae9d450318\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_6\", \"gridData\": {\"w\": 30, \"h\": 13, \"i\": \"2b82a2c9-3809-447c-8e95-52125acccb42\", \"x\": 0, \"y\": 28}, \"panelIndex\": \"2b82a2c9-3809-447c-8e95-52125acccb42\", \"version\": \"8.0.0-SNAPSHOT\"}, {\"embeddableConfig\": {}, \"panelRefName\": \"panel_7\", \"gridData\": {\"w\": 18, \"h\": 13, \"i\": \"40f0a89b-7ce5-498f-a0f0-5c7edf7f8b50\", \"x\": 30, \"y\": 28}, \"panelIndex\": \"40f0a89b-7ce5-498f-a0f0-5c7edf7f8b50\", \"version\": \"8.0.0-SNAPSHOT\"}]",
+                "timeRestore": false,
+                "title": "[Filebeat AWS] CloudTrail",
+                "version": 1
+            },
+            "id": "9c09cd20-7399-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "dashboard": "7.3.0"
+            },
+            "references": [
+                {
+                    "id": "dae24080-739a-11ea-a345-f985c61fe654",
+                    "name": "panel_0",
+                    "type": "map"
+                },
+                {
+                    "id": "4c23e4c0-739a-11ea-a345-f985c61fe654",
+                    "name": "panel_1",
+                    "type": "visualization"
+                },
+                {
+                    "id": "396089c0-7399-11ea-a345-f985c61fe654",
+                    "name": "panel_2",
+                    "type": "visualization"
+                },
+                {
+                    "id": "0f056420-739e-11ea-a345-f985c61fe654",
+                    "name": "panel_3",
+                    "type": "visualization"
+                },
+                {
+                    "id": "7bca4f50-739c-11ea-a345-f985c61fe654",
+                    "name": "panel_4",
+                    "type": "visualization"
+                },
+                {
+                    "id": "f8b63860-739e-11ea-a345-f985c61fe654",
+                    "name": "panel_5",
+                    "type": "visualization"
+                },
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "panel_6",
+                    "type": "search"
+                },
+                {
+                    "id": "8ec43590-739b-11ea-a345-f985c61fe654",
+                    "name": "panel_7",
+                    "type": "visualization"
+                }
+            ],
+            "type": "dashboard",
+            "updated_at": "2020-03-31T22:31:45.309Z",
+            "version": "WzEzNjcsM10="
+        },
+        {
+            "attributes": {
+                "bounds": {
+                    "coordinates": [
+                        [
+                            [
+                                -180,
+                                74.14342
+                            ],
+                            [
+                                -180,
+                                -58.35006
+                            ],
+                            [
+                                180,
+                                -58.35006
+                            ],
+                            [
+                                180,
+                                74.14342
+                            ],
+                            [
+                                -180,
+                                74.14342
+                            ]
+                        ]
+                    ],
+                    "type": "Polygon"
+                },
+                "description": "",
+                "layerListJSON": "[{\"sourceDescriptor\":{\"type\":\"EMS_TMS\",\"isAutoSelect\":true},\"id\":\"2c7b49fb-3fb5-4e18-b27f-fabe930971f3\",\"label\":null,\"minZoom\":0,\"maxZoom\":24,\"alpha\":1,\"visible\":true,\"style\":{},\"type\":\"VECTOR_TILE\"},{\"sourceDescriptor\":{\"id\":\"7bfe2df9-9398-4f1a-8cf7-b57aa5f3f31e\",\"geoField\":\"source.geo.location\",\"filterByMapBounds\":true,\"scalingType\":\"LIMIT\",\"topHitsSize\":1,\"type\":\"ES_SEARCH\",\"tooltipProperties\":[],\"sortField\":\"\",\"sortOrder\":\"desc\",\"applyGlobalQuery\":true,\"indexPatternRefName\":\"layer_1_source_index_pattern\"},\"style\":{\"type\":\"VECTOR\",\"properties\":{\"icon\":{\"type\":\"STATIC\",\"options\":{\"value\":\"marker\"}},\"fillColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#54B399\"}},\"lineColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#41937c\"}},\"lineWidth\":{\"type\":\"STATIC\",\"options\":{\"size\":1}},\"iconSize\":{\"type\":\"STATIC\",\"options\":{\"size\":6}},\"iconOrientation\":{\"type\":\"STATIC\",\"options\":{\"orientation\":0}},\"labelText\":{\"type\":\"STATIC\",\"options\":{\"value\":\"\"}},\"labelColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#000000\"}},\"labelSize\":{\"type\":\"STATIC\",\"options\":{\"size\":14}},\"labelBorderColor\":{\"type\":\"STATIC\",\"options\":{\"color\":\"#FFFFFF\"}},\"symbolizeAs\":{\"options\":{\"value\":\"circle\"}},\"labelBorderSize\":{\"options\":{\"size\":\"SMALL\"}}},\"isTimeAware\":true},\"id\":\"a10fa758-30ad-4e2a-bf9d-472e133a7f17\",\"label\":\"CloudTrail Soure Location\",\"minZoom\":0,\"maxZoom\":24,\"alpha\":0.75,\"visible\":true,\"type\":\"VECTOR\",\"joins\":[],\"query\":{\"query\":\"event.dataset:aws.cloudtrail\",\"language\":\"kuery\"}}]",
+                "mapStateJSON": "{\"zoom\":1.97,\"center\":{\"lon\":0,\"lat\":19.94277},\"timeFilters\":{\"from\":\"now-15m\",\"to\":\"now\"},\"refreshConfig\":{\"isPaused\":false,\"interval\":0},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[]}",
+                "title": "CloudTrail Source Location [Filebeat AWS]",
+                "uiStateJSON": "{\"isLayerTOCOpen\": true, \"openTOCDetails\": []}"
+            },
+            "id": "dae24080-739a-11ea-a345-f985c61fe654",
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "layer_1_source_index_pattern",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "map",
+            "updated_at": "2020-03-31T21:59:12.263Z",
+            "version": "WzEyOTgsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail Event Outcome over time [Filebeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail Event Outcome over time [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"date_histogram\", \"enabled\": true, \"params\": {\"timeRange\": {\"from\": \"now-24h\", \"to\": \"now\"}, \"drop_partials\": false, \"scaleMetricValues\": false, \"interval\": \"auto\", \"min_doc_count\": 1, \"extended_bounds\": {}, \"useNormalizedEsInterval\": true, \"field\": \"@timestamp\"}, \"schema\": \"segment\", \"id\": \"2\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"[unknown]\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.outcome\", \"missingBucket\": true, \"order\": \"desc\"}, \"schema\": \"group\", \"id\": \"3\"}], \"type\": \"area\", \"params\": {\"legendPosition\": \"right\", \"grid\": {\"categoryLines\": false}, \"seriesParams\": [{\"show\": true, \"data\": {\"label\": \"Count\", \"id\": \"1\"}, \"showCircles\": true, \"interpolate\": \"linear\", \"drawLinesBetweenPoints\": true, \"type\": \"area\", \"mode\": \"stacked\", \"lineWidth\": 2, \"valueAxis\": \"ValueAxis-1\"}], \"addTimeMarker\": false, \"valueAxes\": [{\"show\": true, \"style\": {}, \"type\": \"value\", \"name\": \"LeftAxis-1\", \"title\": {\"text\": \"Count\"}, \"scale\": {\"type\": \"linear\", \"mode\": \"normal\"}, \"labels\": {\"show\": true, \"rotate\": 0, \"filter\": false, \"truncate\": 100}, \"id\": \"ValueAxis-1\", \"position\": \"left\"}], \"addTooltip\": true, \"categoryAxes\": [{\"show\": true, \"type\": \"category\", \"id\": \"CategoryAxis-1\", \"title\": {}, \"scale\": {\"type\": \"linear\"}, \"labels\": {\"show\": true, \"filter\": true, \"truncate\": 100}, \"style\": {}, \"position\": \"bottom\"}], \"type\": \"area\", \"thresholdLine\": {\"show\": false, \"width\": 1, \"value\": 10, \"color\": \"#E7664C\", \"style\": \"full\"}, \"times\": [], \"labels\": {}, \"addLegend\": true}}"
+            },
+            "id": "4c23e4c0-739a-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T21:55:12.780Z",
+            "version": "WzEyODksM10="
+        },
+        {
+            "attributes": {
+                "description": "event.action values separated by event.provider.",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail Actions [Filebeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail Actions [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.provider\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"3\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"event.action\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "396089c0-7399-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T21:47:31.804Z",
+            "version": "WzEyODIsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail Event Type [Filebeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail Event Type [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"customLabel\": \"CloudTrail Event Type\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"aws.cloudtrail.event_type\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "0f056420-739e-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T22:22:08.226Z",
+            "version": "WzEzNDAsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail User Agents [Filebeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail User Agents [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 5, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"user_agent.name\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "7bca4f50-739c-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T22:10:51.717Z",
+            "version": "WzEzMjAsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail Error Code [Filebeat AWS]",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail Error Code [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 20, \"missingBucketLabel\": \"Missing\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"aws.cloudtrail.error_code\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"segment\", \"id\": \"2\"}], \"type\": \"pie\", \"params\": {\"legendPosition\": \"right\", \"type\": \"pie\", \"isDonut\": true, \"labels\": {\"last_level\": true, \"show\": false, \"values\": true, \"truncate\": 100}, \"addTooltip\": true, \"addLegend\": true}}"
+            },
+            "id": "f8b63860-739e-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T22:28:40.294Z",
+            "version": "WzEzNTgsM10="
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "user.id",
+                    "event.provider",
+                    "aws.cloudtrail.event_type",
+                    "event.action",
+                    "event.outcome",
+                    "source.address",
+                    "source.geo.region_name"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"match_phrase\": {\"event.dataset\": \"aws.cloudtrail\"}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index\", \"params\": {\"query\": \"aws.cloudtrail\"}, \"negate\": false, \"key\": \"event.dataset\", \"disabled\": false}}], \"version\": true, \"indexRefName\": \"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+                },
+                "sort": [],
+                "title": "CloudTrail Events [Filebeat AWS]",
+                "version": 1
+            },
+            "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "search": "7.4.0"
+            },
+            "references": [
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+                    "type": "index-pattern"
+                },
+                {
+                    "id": "filebeat-*",
+                    "name": "kibanaSavedObjectMeta.searchSourceJSON.filter[0].meta.index",
+                    "type": "index-pattern"
+                }
+            ],
+            "type": "search",
+            "updated_at": "2020-03-31T21:32:58.421Z",
+            "version": "WzEyNzMsM10="
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchRefName": "search_0",
+                "title": "CloudTrail Top User IDs [Filebeat AWS]",
+                "uiStateJSON": "{\"vis\": {\"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}}}}",
+                "version": 1,
+                "visState": "{\"title\": \"CloudTrail Top User IDs [Filebeat AWS]\", \"aggs\": [{\"type\": \"count\", \"enabled\": true, \"params\": {\"customLabel\": \"Event Count\"}, \"schema\": \"metric\", \"id\": \"1\"}, {\"type\": \"terms\", \"enabled\": true, \"params\": {\"size\": 25, \"missingBucketLabel\": \"Missing\", \"customLabel\": \"User ID\", \"otherBucketLabel\": \"Other\", \"orderBy\": \"1\", \"otherBucket\": false, \"field\": \"user.id\", \"missingBucket\": false, \"order\": \"desc\"}, \"schema\": \"bucket\", \"id\": \"2\"}], \"type\": \"table\", \"params\": {\"sort\": {\"direction\": null, \"columnIndex\": null}, \"percentageCol\": \"\", \"showMetricsAtAllLevels\": false, \"totalFunc\": \"sum\", \"showPartialRows\": false, \"showTotal\": false, \"perPage\": 10}}"
+            },
+            "id": "8ec43590-739b-11ea-a345-f985c61fe654",
+            "migrationVersion": {
+                "visualization": "7.4.2"
+            },
+            "references": [
+                {
+                    "id": "30ccde50-7397-11ea-a345-f985c61fe654",
+                    "name": "search_0",
+                    "type": "search"
+                }
+            ],
+            "type": "visualization",
+            "updated_at": "2020-03-31T22:04:14.057Z",
+            "version": "WzEzMTEsM10="
+        }
+    ],
+    "version": "8.0.0-SNAPSHOT"
+}

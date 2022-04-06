@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://academy.semantix.com.br/courses/120/files/folder/dataset
+HostUrl=https://canvas-semantix-bucket.s3.us-east-2.amazonaws.com/account_1/attachments/368/paris-925.logs?response-content-disposition=attachment%3B%20filename%3D%22paris-925.logs%22%3B%20filename%2A%3DUTF-8%27%27paris%252D925.logs&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIATQHQD47CDTFU4ZWS%2F20220329%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20220329T215208Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=cbe937f66c55af30009d6bd4f13ef63dd8a10dfba22ef3ce2642c8500e81a7e0

@@ -1,0 +1,114 @@
+{
+    "objects": [
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Info OSSEC rootkit [Filebeat Osquery] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Info OSSEC rootkit [Filebeat Osquery] ECS\", \"aggs\": [], \"type\": \"markdown\", \"params\": {\"fontSize\": 12, \"markdown\": \"This dashboard shows data collected by the ossec-rootkit pack from osquery.\"}}"
+            },
+            "id": "6ec10290-f4aa-11e7-8647-534bb4c21040-ecs",
+            "type": "visualization",
+            "updated_at": "2018-01-08T19:30:49.785Z",
+            "version": 1
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "0fe5dc00-f49b-11e7-8647-534bb4c21040-ecs",
+                "title": "Number of rootkits found [Filebeat Osquery] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Number of rootkits found [Filebeat Osquery] ECS\", \"aggs\": [{\"type\": \"cardinality\", \"enabled\": true, \"params\": {\"customLabel\": \"Rootkits\", \"field\": \"osquery.result.name\"}, \"schema\": \"metric\", \"id\": \"1\"}], \"type\": \"metric\", \"params\": {\"type\": \"metric\", \"metric\": {\"metricColorMode\": \"None\", \"invertColors\": false, \"useRanges\": false, \"style\": {\"fontSize\": 40, \"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addTooltip\": true, \"addLegend\": false}}"
+            },
+            "id": "ffdbba50-f4a9-11e7-8647-534bb4c21040-ecs",
+            "type": "visualization",
+            "updated_at": "2018-01-08T19:40:05.060Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"filter\": []}"
+                },
+                "savedSearchId": "0fe5dc00-f49b-11e7-8647-534bb4c21040-ecs",
+                "title": "Number of hosts infected [Filebeat Osquery] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Number of hosts infected [Filebeat Osquery] ECS\", \"aggs\": [{\"type\": \"cardinality\", \"enabled\": true, \"params\": {\"customLabel\": \"Hosts\", \"field\": \"agent.hostname\"}, \"schema\": \"metric\", \"id\": \"1\"}], \"type\": \"metric\", \"params\": {\"type\": \"metric\", \"metric\": {\"metricColorMode\": \"None\", \"invertColors\": false, \"useRanges\": false, \"style\": {\"fontSize\": 40, \"bgFill\": \"#000\", \"bgColor\": false, \"labelColor\": false, \"subText\": \"\"}, \"colorSchema\": \"Green to Red\", \"colorsRange\": [{\"from\": 0, \"to\": 10000}], \"labels\": {\"show\": true}, \"percentageMode\": false}, \"addTooltip\": true, \"addLegend\": false}}"
+            },
+            "id": "ab587180-f4a9-11e7-8647-534bb4c21040-ecs",
+            "type": "visualization",
+            "updated_at": "2018-01-08T19:39:45.085Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "",
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{}"
+                },
+                "title": "Navigation [Filebeat Osquery] ECS",
+                "uiStateJSON": "{}",
+                "version": 1,
+                "visState": "{\"title\": \"Navigation [Filebeat Osquery] ECS\", \"aggs\": [], \"type\": \"markdown\", \"params\": {\"fontSize\": 10, \"markdown\": \"[Compilance](#/dashboard/69f5ae20-eb02-11e7-8f04-51231daa5b05-ecs) | [OSSEC Rootkit](#/dashboard/c0a7ce90-f4aa-11e7-8647-534bb4c21040-ecs)\"}}"
+            },
+            "id": "2d6e0760-f4ab-11e7-8647-534bb4c21040-ecs",
+            "type": "visualization",
+            "updated_at": "2018-01-08T19:41:10.264Z",
+            "version": 3
+        },
+        {
+            "attributes": {
+                "columns": [
+                    "osquery.result.name",
+                    "osquery.result.columns.path",
+                    "agent.hostname"
+                ],
+                "description": "",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [{\"$state\": {\"store\": \"appState\"}, \"query\": {\"prefix\": {\"osquery.result.name\": \"pack_ossec-rootkit\"}}, \"meta\": {\"alias\": null, \"type\": \"custom\", \"value\": \"{\\\"prefix\\\":{\\\"osquery.result.name\\\":\\\"pack_ossec-rootkit\\\"}}\", \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"query\", \"disabled\": false}}, {\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"event.module\": {\"type\": \"phrase\", \"query\": \"osquery\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"osquery\", \"params\": {\"type\": \"phrase\", \"query\": \"osquery\"}, \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"event.module\", \"disabled\": false}}, {\"$state\": {\"store\": \"appState\"}, \"query\": {\"match\": {\"fileset.name\": {\"type\": \"phrase\", \"query\": \"result\"}}}, \"meta\": {\"alias\": null, \"type\": \"phrase\", \"value\": \"result\", \"params\": {\"type\": \"phrase\", \"query\": \"result\"}, \"negate\": false, \"index\": \"filebeat-*\", \"key\": \"fileset.name\", \"disabled\": false}}], \"version\": true, \"index\": \"filebeat-*\"}"
+                },
+                "sort": [
+                    "@timestamp",
+                    "desc"
+                ],
+                "title": "OSSEC Rootkits [Filebeat Osquery] ECS",
+                "version": 1
+            },
+            "id": "0fe5dc00-f49b-11e7-8647-534bb4c21040-ecs",
+            "type": "search",
+            "updated_at": "2018-01-08T19:38:24.483Z",
+            "version": 2
+        },
+        {
+            "attributes": {
+                "description": "This dashboard shows data collected by the OSSEC rootkit pack from osquery",
+                "hits": 0,
+                "kibanaSavedObjectMeta": {
+                    "searchSourceJSON": "{\"query\": {\"language\": \"kuery\", \"query\": \"\"}, \"highlightAll\": true, \"filter\": [], \"version\": true}"
+                },
+                "optionsJSON": "{\"useMargins\": true, \"darkTheme\": false, \"hidePanelTitles\": false}",
+                "panelsJSON": "[{\"version\": \"6.1.0-SNAPSHOT\", \"type\": \"visualization\", \"gridData\": {\"w\": 4, \"h\": 2, \"i\": \"1\", \"x\": 8, \"y\": 1}, \"panelIndex\": \"1\", \"id\": \"6ec10290-f4aa-11e7-8647-534bb4c21040-ecs\"}, {\"version\": \"6.1.0-SNAPSHOT\", \"type\": \"visualization\", \"gridData\": {\"w\": 4, \"h\": 2, \"i\": \"2\", \"x\": 4, \"y\": 1}, \"panelIndex\": \"2\", \"id\": \"ffdbba50-f4a9-11e7-8647-534bb4c21040-ecs\"}, {\"version\": \"6.1.0-SNAPSHOT\", \"type\": \"visualization\", \"gridData\": {\"w\": 4, \"h\": 2, \"i\": \"3\", \"x\": 0, \"y\": 1}, \"panelIndex\": \"3\", \"id\": \"ab587180-f4a9-11e7-8647-534bb4c21040-ecs\"}, {\"version\": \"6.1.0-SNAPSHOT\", \"type\": \"visualization\", \"gridData\": {\"w\": 12, \"h\": 1, \"i\": \"4\", \"x\": 0, \"y\": 0}, \"panelIndex\": \"4\", \"id\": \"2d6e0760-f4ab-11e7-8647-534bb4c21040-ecs\"}, {\"version\": \"6.1.0-SNAPSHOT\", \"type\": \"search\", \"gridData\": {\"w\": 12, \"h\": 4, \"i\": \"5\", \"x\": 0, \"y\": 3}, \"panelIndex\": \"5\", \"id\": \"0fe5dc00-f49b-11e7-8647-534bb4c21040-ecs\"}]",
+                "timeRestore": false,
+                "title": "[Filebeat Osquery] OSSEC rootkit pack ECS",
+                "uiStateJSON": "{}",
+                "version": 1
+            },
+            "id": "c0a7ce90-f4aa-11e7-8647-534bb4c21040-ecs",
+            "type": "dashboard",
+            "updated_at": "2018-01-08T19:40:16.304Z",
+            "version": 6
+        }
+    ],
+    "version": "6.1.0-SNAPSHOT"
+}
